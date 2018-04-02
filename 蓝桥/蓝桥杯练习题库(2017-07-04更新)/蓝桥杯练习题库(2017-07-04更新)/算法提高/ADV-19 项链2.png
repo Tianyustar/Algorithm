@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/LanqiaoTrain.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="head" -->
+
+
+<!-- InstanceEndEditable -->
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/connect.css" rel="stylesheet" type="text/css"/>
+<link href="/css/shouye-header.css" rel="stylesheet" type="text/css"/>
+<link href="/css/shouye-foot.css" rel="stylesheet" type="text/css"/>
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap-ie6.css">
+<link rel="stylesheet" type="text/css" href="/css/ie.css">
+<![endif]-->
+<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<!--[if IE 7]>
+<link rel="stylesheet" href="/css/font-awesome-ie7.min.css">
+<![endif]-->
+<link href="/codemirror/codemirror.css" type="text/css" rel="stylesheet" />
+<link href="/codemirror/theme/eclipse.css" type="text/css" rel="stylesheet" />
+<link href="/codemirror/theme/neat.css" type="text/css" rel="stylesheet" />
+<link href="/css/lqstyles.css" type="text/css" rel="stylesheet" />
+<script src="/js/jquery.min.js" type="text/javascript"></script>
+<script src="/js/nav_s140928.js" language="javascript" type="text/javascript"></script>
+<script src="/js/lx.js" type="text/javascript"></script>
+<!-- InstanceBeginEditable name="startFunc" -->
+<script type="text/javascript">
+function onStart()
+{
+	if (""!="")
+		$("#refarrow").show();
+}
+</script>
+<!-- InstanceEndEditable -->
+<script type="text/javascript">
+$("document").ready(function(){
+	onPageReady();
+});
+</script>
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>“蓝桥杯”练习系统</title>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+<div  class="lq_headbg_s140916" >
+  <div class="sy_head_s140916">
+    <div>
+      <div class="sylogo_s140916"> <a href=""><img src="/img/logo.png" width="118" height="65"/></a></div>
+       <!-- 导航开始 -->
+       <div class="nav_yhdl_s140928">
+        <div id="navwraper_g140925">
+        <dl id="nav_yhdl_s140928">
+ <dd class=""><a href="/index.page">首页</a></dd>  <dd class=""><a href="/help.page">使用帮助</a></dd>  <dd class=""><a href="http://dasai.lanqiao.cn/">大赛官网</a></dd> 
+         </dl>       
+       </div>
+     </div>
+    <!-- 导航结束 -->
+      <div class="sydlzc_s140916"> 
+        <!--登录开始-->
+        <div class="login_g140916" style="display:block; ">
+          <div class="login_title_g140916"><a id="xloginbtn" href="###"><img src="/img/dl-h.png" width="39" height="21"/></a></div>
+        </div>
+        <!--登录结束-->
+        <div class="userblock" style="display:none; margin:-20px 0 0 -30px; ">
+        	<b></b>，<a href="/UserLogout.do">退出</a><br />
+			<a href='/vieworders.page'><b>-</b></a>
+        </div>
+        <div class="cls"></div>
+      </div>
+      <div class="cls"></div>
+    </div>
+  </div>
+</div>
+<div class="excess_86_g140925"></div>
+<div class="bodydiv">
+<div style="height:40px;">&nbsp;</div>
+<!-- InstanceBeginEditable name="body" -->
+
+<style>
+.news {
+width:280px;
+margin:18px 0px 0px 18px;
+display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline;`
+vertical-align:top; 
+}
+.news .newshead {
+background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#cad6de), to(#f6f6f6)); 
+background:-moz-linear-gradient(top, #cad6de, #f6f6f6);
+FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#cad6de,endColorStr=#f6f6f6); 
+border-top:1px solid #c1c3c4;
+border-left:1px solid #c1c3c4;
+border-right:1px solid #c1c3c4;
+border-top-left-radius:3px;
+border-top-right-radius:3px;
+height:30px;
+line-height:30px;
+padding-left:10px;
+font-family:"微软雅黑", "黑体", "宋体";
+font-size:14px;
+color:#e32809;
+}
+.news .newsbody {
+background:#f6f6f6;
+border-bottom:1px solid #c1c3c4;
+border-left:1px solid #c1c3c4;
+border-right:1px solid #c1c3c4;
+padding-top:16px;
+padding-bottom:20px;
+border-bottom-left-radius:3px;
+border-bottom-right-radius:3px;
+padding-left:10px;
+padding-right:10px;
+}
+.news .newsbody .newsitem {
+border-bottom:solid 1px #d2d3d7;
+line-height:30px;
+height:30px;
+background:center left url(images/newsitem.png) no-repeat #f6f6f6;
+padding-left:25px;
+padding-right:65px;
+position:relative;
+}
+.news .newsbody .newsitem .newtitle {
+width:168px;
+overflow:hidden;
+white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:ellipsis;
+}
+.news .newsbody .newsitem a {
+text-decoration:none;
+color:#050505;
+}
+.news .newsbody .newsitem a:hover {
+text-decoration:underline;
+color:#e32809;
+}
+.news .newsbody .newsitem .newstime {
+position:absolute;
+right:0px;
+top:0px;
+line-height:30px;
+}
+
+</style>
+<!--
+<div id="news" class="news">
+<div class="newshead">
+最新更新</div>
+<div class="newsbody">
+<div class="newsitem">
+<div class="newtitle">添加部分入门试题</div><div class="newstime">2013-09-23</div>
+</div><div class="newsitem">
+<div class="newtitle">系统开始试运行</div><div class="newstime">2013-09-23</div>
+</div>
+</div>
+</div>
+-->
+
+<style>
+.welcome {
+width:850px;
+margin:50px auto 0px auto;
+/*background:#e3eefd;*/
+vertical-align:top; 
+}
+.welcomeinline {
+display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline;
+}
+.welcomeinfo {
+padding:23px 45px 100px 45px;
+}
+.welcomehead {
+font-family:"微软雅黑", "黑体", "宋体";
+font-size:18px;
+margin-bottom:18px;
+text-align:center;
+}
+.welcomecont {
+text-indent:2em;
+font-size:16px;
+line-height:22px;
+}
+.welcomecont p {
+margin:0px 0px 8px 0px;
+}
+</style>
+
+<div id="welcome" class="welcome" style="position:relative;">
+<div id="refarrow" style="position:absolute; left:115px; top:-90px; width:51px; height:21px; background-image:url(/img/arrow.png); display:none; ">
+&nbsp;
+</div>
+<div class="welcomeinfo">
+<div class="welcomehead">
+欢迎使用"蓝桥杯"全国软件和信息技术专业人才大赛练习系统</div>
+<div class="welcomecont">
+<p>本系统面向参加"蓝桥杯"全国软件和信息技术专业人才大赛的老师和同学。</p>
+<p>本系统将帮助参赛的同学熟悉比赛试题的形式和解题方式。通过使用本系统，同学可以学习到一些重要的编程方法，提高自己的编程水平，在大赛中取得更好的名次，提升自己的竞争力。</p>
+<p>本系统的特点：</p>
+<p>1. <b>入门引导</b>：设置入门引导试题，帮助同学了解比赛的命题形式和解题方法。</p>
+<p>2. <b>试题分组</b>：具有相同难度和特点的试题形成一组，同组的试题具有相关性，帮助同学学习与提高程序设计、算法、数据结构的知识。</p>
+<p>3. <b>不断更新的试题</b>：系统不定期更新试题，保证同学的训练量。</p>
+<p>4. <b>测试管理</b>：可以将练习系统的题目进行组卷，进行分数统计，方便院校在大赛报名中校内选拔出优秀选手。</p>
+<p>5. <b>查看评测数据</b>：VIP用户允许查看评测数据，帮助你更有效的练习和提高。</p>
+<p>6. <b>比赛环境</b>：使用和软件大赛相同的测试环境进行测试，有效的模拟大赛的评测。</p>
+<p>7. <b>即时评测</b>：提交答案后马上进行评测并给出评测结果，方便同学了解自己程序的不足，对自己的程序进行改进。</p>
+</div>
+</div>
+</div>
+<!-- InstanceEndEditable -->
+<div style="height:40px;">&nbsp;</div>
+</div>
+<div class="foot_fb_s140916">
+  <div class="foot-top1_s140916">
+    <div class="ft-left_s140916">
+      <div class="left-nr_s140916">
+        <div class="fb_lxwm_s140916"> <a href="http://dasai.lanqiao.cn/dasai/tell_ours.html">
+          <ul>
+            <li><img src="/img/lxwm-foot.png"/></li>
+            <li>联系我们</li>
+          </ul>
+          </a> </div>
+        <div class="fb_yhxy_s140916"> <a href="http://dasai.lanqiao.cn/account/user_protocol.html">
+          <ul>
+            <li><img src="/img/yhxy-foot.png"/></li>
+            <li>用户协议</li>
+          </ul>
+          </a> </div>
+        <div class="fb_gywm_s140916"> <a href="http://dasai.lanqiao.cn/dasai/about_ours.html">
+          <ul>
+            <li><img src="/img/gywm-foot.png"/></li>
+            <li>关于我们</li>
+          </ul>
+          </a> </div>
+        <div class="cls"></div>
+      </div>
+      <p>
+				主办单位：工业和信息化部人才交流中心 <br />
+				地址：北京市海淀区万寿路27号院工信部机关18#信箱 邮编: 100846 <br />
+				电话：4006-588-662 传真：010-68208666 京ICP备11024192号 京公网安备 11010802020352号<br />
+        E-mail: <span class="wd-mail gc" pre="lanqiao" suc="lanqiao.org"></span></p>
+    </div>
+    <div class="ft-right_s140916">
+      <ul>
+        <li><img src="/img/foot-qrcode1.png" width="128px" height="128px" /></li>
+        <li>关注订阅号，资讯先了解！</li>
+      </ul>
+      <ul>
+        <li><img src="/img/foot-qrcode2.png" width="128px" height="128px"/></li>
+        <li>关注服务号，轻松查成绩！</li>
+      </ul>
+      <div class="cls"></div>
+      <h4>请用微信扫描之后即可进入蓝桥杯提供功能</h4>
+    </div>
+    <div class="cls"></div>
+  </div>
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

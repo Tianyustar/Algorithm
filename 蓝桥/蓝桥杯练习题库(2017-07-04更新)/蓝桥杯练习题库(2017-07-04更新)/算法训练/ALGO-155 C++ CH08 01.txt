@@ -1,0 +1,9 @@
+算法训练 C++ CH08 01
+时间限制：1.0s   内存限制：256.0MB
+问题描述　　已知一个有理数类Zrf_Ratio，实现如下的操作符重载形式：
+　　friend std::ostream&amp; operator&lt;&lt;(std::ostream&amp;, const zrf_Ratio&amp;);//输出最简分数
+　　friend std::istream&amp; operator&gt;&gt;(std::istream&amp;, zrf_Ratio&amp;);
+　　friend bool operator==(const zrf_Ratio&amp;, const zrf_Ratio&amp;);
+　　friend bool operator&lt;(const zrf_Ratio&amp;, const zrf_Ratio&amp;);测试　　测试时主程序会输入四个整数a, b, c, d，表示两个分数a/b和c/d。要求输出最简分数以及两个分数相等和大小的比较结果。样例输入1 7 26 25样例输出zrf is:1/7; ssh is:26/25
+(zrf==ssh) is:0; (zrf&lt;ssh) is:1
+
